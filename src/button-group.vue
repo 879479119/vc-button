@@ -1,5 +1,5 @@
 <template>
-    <button>buttonGroup</button>
+  <button>buttonGroup</button>
 </template>
 <script>
 

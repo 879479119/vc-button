@@ -4,7 +4,6 @@ const webpack = require('webpack')
 module.exports = {
   entry: {
     index: [
-      './node_modules/react-dev-utils/webpackHotDevClient.js',
       './examples/index.js',
     ],
   },

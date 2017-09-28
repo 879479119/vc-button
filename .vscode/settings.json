@@ -15,5 +15,7 @@
     "vue": "html"
   },
   "eslint.autoFixOnSave": true,
-  "vetur.format.html.wrap_line_length": 60
+  "vetur.validation.template": true,
+  "vetur.format.html.wrap_line_length": 60,
+  "vetur.format.js.InsertSpaceBeforeFunctionParenthesis": true
 }
