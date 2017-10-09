@@ -53,6 +53,23 @@
       <AntButton shape="circle" loading />
       <AntButton type="primary" shape="circle" loading />
     </div>
+    <div>
+      <ButtonGroup>
+        <AntButton>Cancel</AntButton>
+        <AntButton type="primary">OK</AntButton>
+      </ButtonGroup>
+      <ButtonGroup size="large">
+        <AntButton disabled>L</AntButton>
+        <AntButton disabled>M</AntButton>
+        <AntButton disabled>R</AntButton>
+      </ButtonGroup>
+      <ButtonGroup size="small">
+        <AntButton type="primary">L</AntButton>
+        <AntButton>M</AntButton>
+        <AntButton>M</AntButton>
+        <AntButton type="dashed">R</AntButton>
+      </ButtonGroup>
+    </div>
   </div>
 </template>
 <script>

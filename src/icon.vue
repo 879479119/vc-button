@@ -25,7 +25,7 @@ export default {
       return {
         [`${prefixCls}`]: true,
         [`${prefixCls}-${type}`]: type,
-        [`${prefixCls}-spin`]: spin,
+        [`${prefixCls}-spin`]: !!spin || type === 'loading',
       }
     },
   },
