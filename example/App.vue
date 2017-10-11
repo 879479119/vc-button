@@ -1,21 +1,23 @@
 <template>
   <div>
-    <AntButton :type="this.type" @click="handleClick" class="test">
-      primary
-    </AntButton>
-    <AntButton>Default</AntButton>
-    <AntButton type="dashed">Dashed</AntButton>
-    <AntButton type="danger">Danger</AntButton>
-    <br />
-    <AntButton type="primary" shape="circle" icon="search" />
-    <AntButton type="primary" icon="search">Search</AntButton>
-    <AntButton shape="circle" icon="search" />
-    <AntButton icon="search">Search</AntButton>
-    <br />
-    <AntButton shape="circle" icon="search" />
-    <AntButton icon="search">Search</AntButton>
-    <AntButton type="dashed" shape="circle" icon="search" />
-    <AntButton type="dashed" icon="search">Search</AntButton>
+    <div>
+      <AntButton :type="this.type" @click="handleClick" class="test">primary</AntButton>
+      <AntButton>Default</AntButton>
+      <AntButton type="dashed">Dashed</AntButton>
+      <AntButton type="danger">Danger</AntButton>
+    </div>
+    <div>
+      <AntButton type="primary" shape="circle" icon="search" />
+      <AntButton type="primary" icon="search">Search</AntButton>
+      <AntButton shape="circle" icon="search" />
+      <AntButton icon="search">Search</AntButton>
+    </div>
+    <div>
+      <AntButton shape="circle" icon="search" />
+      <AntButton icon="search">Search</AntButton>
+      <AntButton type="dashed" shape="circle" icon="search" />
+      <AntButton type="dashed" icon="search">Search</AntButton>
+    </div>
     <div>
       <AntButton type="primary">Primary</AntButton>
       <AntButton type="primary" disabled>Primary(disabled)</AntButton>

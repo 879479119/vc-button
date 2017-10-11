@@ -1,53 +1,55 @@
 {
   "name": "vc-button",
-  "version": "1.0.0",
-  "description": "vue button component",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "component for vue-component",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --open --hot",
+    "start": "vc-tool start",
+    "build": "vc-tool run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint -c ./.eslintrc --fix --ext .js ./src/",
-    "lint:style": "stylelint \"./src/**/*.less\" --syntax less"
+    "lint": "eslint -c ./.eslintrc --fix --ext .vue ./src/",
+    "lint:style": "stylelint \"./assets/**/*.less\" --syntax less"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vueComponent/vc-button.git"
+    "url": "git+https://github.com/vueComponent/vc-demo.git"
   },
   "keywords": [
-    "vue"
+    "vue",
+    "component",
+    "vc-demo"
   ],
-  "author": "",
-  "license": "MIT",
+  "author": "undefined",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/vueComponent/vc-button/issues"
+    "url": "https://github.com/vueComponent/vc-demo/issues"
   },
-  "homepage": "https://github.com/vueComponent/vc-button#readme",
-  "pre-commit": [
-    "lint",
-    "lint:style"
-  ],
+  "homepage": "https://github.com/vueComponent/vc-demo#readme",
+  "dependencies": {
+    "glob": "^7.1.2"
+  },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "css-loader": "^0.28.7",
     "eslint": "^4.7.2",
     "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-vue-libs": "^1.2.1",
-    "html-webpack-plugin": "^2.30.1",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.5",
     "pre-commit": "^1.2.2",
-    "style-loader": "^0.18.2",
     "stylelint": "^8.1.1",
     "stylelint-config-standard": "^17.0.0",
-    "vue": "^2.4.4",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2"
+    "less": "^1.7.4",
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-preset-env": "^1.6.0",
+    "mkdirp": "^0.5.1",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "vue": "^2.4.4"
   },
-  "dependencies": {
-    "eslint-plugin-vue": "^3.13.0"
-  }
+  "pre-commit": [
+    "lint",
+    "lint:style"
+  ]
 }
